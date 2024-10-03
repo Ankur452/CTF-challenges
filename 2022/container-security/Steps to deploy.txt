@@ -1,0 +1,15 @@
+To build the docker image from Dockerfile:
+$ docker build -t my-apache2 . (where "my-apache2" is image name)
+
+To run the Docker image:
+$ docker run -dit --name my-running-app -p 1337:80 my-apache2
+After this, goto your browser and access the site at http://localhost:1337
+
+To stop the running container:
+$ docker stop <Container ID>
+
+To remove the container:
+$ docker rm <Container ID>
+
+To list all the container inside your machine:
+$ docker ps -a

@@ -1,0 +1,1 @@
+CTF{D0n't_Run_C0nt@iner_as_R00T}

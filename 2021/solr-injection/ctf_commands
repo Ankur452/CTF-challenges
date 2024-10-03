@@ -1,0 +1,9 @@
+#run this command from the directry where you already have a Dockerfile,to create a custom image
+
+docker build . -t ctf_solr8_injection_image
+
+#to generate a container from a custom build image use the beo command.
+
+docker run -it --name ctf_solr_injection -p 8983:8983 ctf_solr8_injection_image
+
+CMD echo CTF{S0lr_!nj3ct!0n_!$_B@d} > CTF{S0lr_!nj3ct!0n_!$_B@d}

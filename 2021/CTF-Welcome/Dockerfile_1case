@@ -1,0 +1,24 @@
+# start from base
+FROM ubuntu:18.04
+
+RUN apt-get update -y && apt-get install -y python-pip python-dev
+
+#Creating flag for the Challenge
+RUN cd /home && mkdir Desktop  
+RUN cd /home/Desktop && echo "CTF{Welcome_To_CTF_2021}" > - 
+
+# We copy just the requirements.txt first to leverage Docker cache
+COPY ./app/requirements.txt /app/requirements.txt
+
+WORKDIR /app
+
+RUN pip install -r requirements.txt
+
+COPY /app /app
+
+# Add a new user "carlos" with user id 8877
+RUN useradd -u 8877 carlos
+# Change to non-root privilege
+USER carlos
+
+CMD [ "python", "./app.py" ]

@@ -1,0 +1,17 @@
+version: "3.0"
+
+services:
+  solr_test:
+    container_name: solr_injection
+    image: custom_solr8
+    ports:
+      - 8983:8983
+    command:
+      - solr-precreate
+      - ctf # core name
+      - /opt/solr/server/solr/configsets/myconfig # custom configset
+
+networks:
+  default:
+    external:
+      name: database_default

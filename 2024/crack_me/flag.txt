@@ -1,0 +1,8 @@
+CTF{0bfu$c4t3_y0ur_C0d3}
+
+Refer Link:
+https://www.cs.cmu.edu/~pattis/15-1XX/common/handouts/ascii.html
+https://www.rapidtables.com/code/text/ascii-table.html
+
+Tool to use:
+https://toolslick.com/math/bitwise/xor-calculator

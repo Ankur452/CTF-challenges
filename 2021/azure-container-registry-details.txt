@@ -1,0 +1,8 @@
+Azure Container Registry.
+
+Registry name:ankurCtfRegistry
+Login Server: ankurctfregistry.azurecr.io
+
+Username: ankurCtfRegistry
+Password1:1+nl7+IrJY8f19MyRJnpu653D6Pxmkj4
+Password2:4+RulpfzOZ+MyWXiPNkwHJl1W/q5R8HC

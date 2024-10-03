@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Responsive Table + Detail View</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+<link rel="stylesheet" href="{{ url_for('static', filename= 'css/table_style.css')}}">
+<style>
+    a {color: white;
+    text-underline-offset: none;}
+</style>
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<h1>
+  Portal Records
+</h1>
+<p>
+  (The financial year 2022 Records)
+</p>
+<main>
+  <table>
+    <thead>
+      <tr>
+        <th>
+          Record Name
+        </th>
+        <th>
+          Record Link
+        </th>
+        <th></th>
+      </tr>
+    </thead>
+    <tfoot>
+      <tr>
+        <th colspan='3'>
+          Year: 2022
+        </th>
+      </tr>
+    </tfoot>
+    <tbody>
+      <tr>
+        <td data-title='Provider Name'>
+          January Report
+        </td>
+        <td data-title='E-mail'>
+            <a href="../show_record?record=January.xls">January Report Data</a>
+        </td>
+        <td class='select'>
+          <a class='button' href='#'>
+            Select
+          </a>
+        </td>
+      </tr>
+      <tr>
+        <td data-title='Provider Name'>
+          February Report
+        </td>
+        <td data-title='E-mail'>
+            <a href="../show_record?record=February.xls">February Report Data</a>
+        </td>
+        <td class='select'>
+          <a class='button' href='#'>
+            Select
+          </a>
+        </td>
+      </tr>
+      <tr>
+        <td data-title='Provider Name'>
+          March Report
+        </td>
+        <td data-title='E-mail'>
+            <a href="../show_record?record=March.xls">March Report Data</a>
+        </td>
+        <td class='select'>
+          <a class='button' href='#'>
+            Select
+          </a>
+        </td>
+      </tr>
+      <tr>
+        <td data-title='Provider Name'>
+          April Report
+        </td>
+        <td data-title='E-mail'>
+            <a href="../show_record?record=April.xls">April Report Data</a>
+        </td>
+        <td class='select'>
+          <a class='button' href='#'>
+            Select
+          </a>
+        </td>
+      </tr>
+      <tr>
+        <td data-title='Provider Name'>
+          May Report
+        </td>
+        <td data-title='E-mail'>
+            <a href="../show_record?record=May.xls">May Report Data</a>
+        </td>
+        <td class='select'>
+          <a class='button' href='#'>
+            Select
+          </a>
+        </td>
+      </tr>
+      <tr>
+        <td data-title='Provider Name'>
+          June Report
+        </td>
+        <td data-title='E-mail'>
+            <a href="../show_record?record=June.xls">June Report Data</a>
+        </td>
+        <td class='select'>
+          <a class='button' href='#'>
+            Select
+          </a>
+        </td>
+      </tr>
+      <tr>
+        <td data-title='Provider Name'>
+          July Report
+        </td>
+        <td data-title='E-mail'>
+            <a href="../show_record?record=July.xls">July Report Data</a>
+        </td>
+        <td class='select'>
+          <a class='button' href='#'>
+            Select
+          </a>
+        </td>
+      </tr>
+      <tr>
+        <td data-title='Provider Name'>
+          August Report
+        </td>
+        <td data-title='E-mail'>
+            <a href="../show_record?record=August.xls">August Report Data</a>
+        </td>
+        <td class='select'>
+          <a class='button' href='#'>
+            Select
+          </a>
+        </td>
+      </tr>
+      <tr>
+        <td data-title='Provider Name'>
+          September Report
+        </td>
+        <td data-title='E-mail'>
+            <a href="../show_record?record=September.xls">September Report Data</a>
+        </td>
+        <td class='select'>
+          <a class='button' href='#'>
+            Select
+          </a>
+        </td>
+      </tr>      
+    </tbody>
+  </table>
+  <div class='detail'>
+    <div class='detail-container'>
+      <dl>
+        <dt>
+          Provider Name
+        </dt>
+        <dd>
+          John Doe
+        </dd>
+        <dt>
+          E-mail
+        </dt>
+        <dd>
+          sysadmin@power.com
+        </dd>
+        <dt>
+          City
+        </dt>
+        <dd>
+          Detroit
+        </dd>
+        <dt>
+          Phone-Number
+        </dt>
+        <dd>
+          555-555-5555
+        </dd>
+        <dt>
+          Last Update
+        </dt>
+        <dd>
+          Jun 20 2014
+        </dd>
+        <dt>
+          Notes
+        </dt>
+        <dd>
+          Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede.
+        </dd>
+      </dl>
+    </div>
+    <div class='detail-nav'>
+      <button class='close'>
+        Close
+      </button>
+    </div>
+  </div>
+</main>
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script><script  src="{{ url_for('static', filename= 'js/table_script.js')}}"></script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Look for secret. It is hidden some where in the application to decode the record files -->
